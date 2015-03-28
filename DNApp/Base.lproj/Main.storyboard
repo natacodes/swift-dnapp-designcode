@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1200" y="316.9014084507042"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="7gZ-L9-0VT">
             <objects>
-                <viewController id="vmN-al-hyH" sceneMemberID="viewController">
+                <viewController id="vmN-al-hyH" customClass="LoginViewController" customModule="DNApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zxs-dz-a60"/>
                         <viewControllerLayoutGuide type="bottom" id="1ss-ZT-Zxl"/>
@@ -142,12 +142,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9C-7D-7nN">
                                         <rect key="frame" x="100" y="25" width="80" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designer News " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUv-0j-SEh">
-                                        <rect key="frame" x="67" y="53" width="146.5" height="27.5"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -202,10 +196,19 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidTouch:" destination="vmN-al-hyH" eventType="touchUpInside" id="EyD-Wp-Dnw"/>
+                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-wD-8HB">
                                         <rect key="frame" x="30" y="113" width="26" height="18"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designer News " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUv-0j-SEh">
+                                        <rect key="frame" x="67" y="53" width="146.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -215,6 +218,7 @@
                                     <constraint firstAttribute="width" constant="280" id="9Fw-N4-I3R"/>
                                     <constraint firstAttribute="bottom" secondItem="lCt-cu-LHy" secondAttribute="bottom" constant="20" id="JNR-3B-aky"/>
                                     <constraint firstItem="lCt-cu-LHy" firstAttribute="top" secondItem="dhN-4c-2aq" secondAttribute="bottom" constant="19" id="O7w-RG-0zQ"/>
+                                    <constraint firstItem="cps-LN-htw" firstAttribute="top" secondItem="aUv-0j-SEh" secondAttribute="bottom" constant="19.5" id="PB6-3H-CxA"/>
                                     <constraint firstAttribute="centerX" secondItem="f9C-7D-7nN" secondAttribute="centerX" id="R7T-xT-2x5"/>
                                     <constraint firstAttribute="height" constant="280" id="WC2-gj-3I5"/>
                                     <constraint firstItem="dhN-4c-2aq" firstAttribute="centerY" secondItem="CA4-QW-mf9" secondAttribute="centerY" constant="0.5" id="WfJ-1m-6iB"/>
@@ -252,6 +256,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="OjP-gp-QKB" id="hiU-Th-Rsi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhY-6C-xlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XZi-N3-Ea3" userLabel="Exit" sceneMemberID="exit"/>
