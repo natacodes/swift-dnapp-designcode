@@ -41,6 +41,7 @@
 		419561AB1AC4EF810067D04F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419561911AC4EF810067D04F /* TransitionZoom.swift */; };
 		419561AC1AC4EF810067D04F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419561921AC4EF810067D04F /* UnwindSegue.swift */; };
 		419561AE1AC630570067D04F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419561AD1AC630570067D04F /* LoginViewController.swift */; };
+		419561B01AC787890067D04F /* LernViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419561AF1AC787890067D04F /* LernViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		419561911AC4EF810067D04F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		419561921AC4EF810067D04F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		419561AD1AC630570067D04F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		419561AF1AC787890067D04F /* LernViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LernViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				419561591AC4E4670067D04F /* ViewController.swift */,
 				419561AD1AC630570067D04F /* LoginViewController.swift */,
 				4195615B1AC4E4670067D04F /* Main.storyboard */,
+				419561AF1AC787890067D04F /* LernViewController.swift */,
 				4195615E1AC4E4670067D04F /* Images.xcassets */,
 				419561601AC4E4670067D04F /* LaunchScreen.xib */,
 				419561561AC4E4670067D04F /* DNApp.xcdatamodeld */,
@@ -316,6 +319,7 @@
 				419561941AC4EF810067D04F /* Data.swift in Sources */,
 				419561931AC4EF810067D04F /* BlurView.swift in Sources */,
 				419561551AC4E4670067D04F /* AppDelegate.swift in Sources */,
+				419561B01AC787890067D04F /* LernViewController.swift in Sources */,
 				4195619A1AC4EF810067D04F /* DesignableTextView.swift in Sources */,
 				419561581AC4E4670067D04F /* DNApp.xcdatamodeld in Sources */,
 				419561A71AC4EF810067D04F /* SpringTextField.swift in Sources */,
